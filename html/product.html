@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../asset/Logo/Logo N.png" type="image title" />
+    <title>Product</title>
+
+    <!-- Link Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: whitesmoke;
+        box-sizing: border-box;
+      }
+
+      .produk {
+        margin-top: 7rem;
+      }
+
+      section {
+        margin-bottom: 3rem;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      .x {
+        border: 2px solid red;
+      }
+
+      .m {
+        margin: 0.7rem;
+      }
+
+      .produk button {
+        bottom: 10%;
+        right: 10%;
+      }
+
+      .produk .dalem .buy p {
+        margin-left: 4rem;
+        text-align: end;
+      }
+
+      .produk .dalem .gambar {
+        margin-right: 2rem;
+      }
+
+      @media (max-width: 821px) {
+        .produk .dalem .buy p {
+          margin-left: 0;
+          text-align: end;
+        }
+      }
+
+      @media (max-width: 400px) {
+        .produk {
+          padding-top: 29rem;
+        }
+
+        .deskripsi {
+          padding-bottom: 5rem;
+        }
+
+        .produk .dalem .buy {
+          text-align: center;
+          position: absolute;
+          bottom: -1%;
+          z-index: 5;
+        }
+
+        .produk .dalem .buy p {
+          margin-left: 0;
+          text-align: center;
+        }
+
+        .produk .dalem .gambar {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          width: 100%;
+          top: 3%;
+          left: 0;
+          margin-right: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar p-0 shadow fixed-top" style="background-color: #445d48">
+      <div class="container p-0 text-white">
+        <div class="row p-4 d-flex m-0" style="width: 100%">
+          <div class="col-4 d-sm-block d-none">
+            <a class="" href="pembayaran.html">
+              <img
+                src="../asset/Logo/Logo Normal.png"
+                alt="logoNavbar"
+                style="max-width: 9rem; width: 100%"
+              />
+            </a>
+          </div>
+          <div class="col-sm-8 d-flex align-items-center p-0">
+            <form
+              class="d-flex m-0 me-2 align-items-center rounded"
+              style="width: 90%; background-color: white"
+              role="search"
+            >
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search here.."
+                aria-label="Search"
+                style="width: 75%; border: none"
+              />
+              <button
+                class="text-black"
+                type="submit"
+                style="width: 25%; border: none; background-color: #ffffff00"
+              >
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+            <i class="bi bi-cart-fill fs-4 text-white" style="width: 10%"></i>
+          </div>
+        </div>
+      </div>
+      <div style="width: 100vw; height: 1rem; background-color: #d6cc99"></div>
+    </nav>
+
+    <!-- Akhir Navbar -->
+
+    <div class="container position-relative">
+      <!-- Produk Started -->
+      <section class="produk">
+        <div
+          class="luar pt-3 rounded-3 shadow"
+          style="background-color: #d6cc99"
+        >
+          <div class="dalem p-5 shadow rounded" style="background-color: white">
+            <div class="wrapper d-flex">
+              <div class="gambar">
+                <div
+                  class="position-relative text-center rounded shadow"
+                  style="
+                    width: 20rem;
+                    height: 20rem;
+                    background-color: whitesmoke;
+                  "
+                >
+                  <img
+                    src="../asset/Peternakan/daging sapi.png"
+                    class="card-img position-absolute top-50 start-50 translate-middle"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <div class="desc" style="width: 100%">
+                <h3 class="mb-3 fw-bold">Daging Sapi</h3>
+                <h1 class="mb-3 fw-bold">Rp. 30.000,00 / Kg</h1>
+                <p class="mb-3">Stok : 99</p>
+              </div>
+            </div>
+            <a href="keranjang.html"
+              ><div class="buy row justify-content-between">
+                <p class="mb-3 col-lg-5">Jumlah Barang : 1</p>
+                <button
+                  type="button"
+                  class="btn btn-success btn-lg fw-semibold fs-4 col-lg-3"
+                  style="background-color: #445d48"
+                >
+                  + Keranjang
+                </button>
+              </div></a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- Produk Ended -->
+
+      <!-- Deskripsi Started -->
+      <section class="deskripsi">
+        <div class="container p-0">
+          <div
+            class="luar pt-3 rounded-3 shadow"
+            style="background-color: #d6cc99"
+          >
+            <div
+              class="dalem p-5 shadow rounded position-relative"
+              style="background-color: white"
+            >
+              <h3 class="mb-3 fw-bold">Daging Sapi</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium quae quasi architecto earum cumque soluta itaque,
+                cupiditate dolore fugiat, alias eos quisquam consequatur cum
+                nihil consequuntur reiciendis, labore iste ex laudantium
+                adipisci? Distinctio repudiandae animi quis earum beatae
+                voluptas quod vitae qui exercitationem non officia, assumenda
+                quae, asperiores repellat tenetur suscipit porro fuga aut
+                laboriosam adipisci molestias minus. Quas sequi at sunt illum
+                nemo cum saepe fugit ad consequatur debitis porro eius ipsum, et
+                maxime est officia laboriosam ex accusamus numquam qui hic
+                ratione! Sequi perspiciatis dolorem amet a cupiditate corporis
+                modi consequuntur quaerat dolor perferendis, exercitationem,
+                dicta voluptatibus! Praesentium! <br />
+                <br />
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Adipisci nam quasi magni voluptate veniam reiciendis voluptatum
+                quibusdam fugiat consectetur quaerat doloremque, ad unde cumque
+                dolores consequuntur sit aut rerum quidem numquam blanditiis
+                repellat? Accusantium illo odit odio optio ullam itaque
+                quibusdam beatae, explicabo ipsum? Illo, dolorum facere.
+                Accusantium distinctio sunt molestias vero harum nobis,
+                obcaecati iste possimus quasi incidunt necessitatibus
+                reprehenderit enim ducimus, voluptatem veniam eaque eos
+                dignissimos at officia a nulla? Quo reiciendis quas distinctio
+                blanditiis repellat sit, rerum enim cum architecto facilis
+                exercitationem sapiente earum, iusto temporibus molestiae et
+                saepe veritatis autem sequi ipsa aliquam! Ipsa, obcaecati
+                tenetur?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Deskripsi Ended -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="mb-0" style="background-color: #445d48">
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 mb-3 p-3">
+            <img
+              src="../asset/Logo/Logo Normal.png"
+              alt="logo footer"
+              style="max-width: 9rem; width: 100%"
+            />
+          </div>
+          <div class="col-md-3 col-sm-6 mb-3 p-3">
+            <ul class="list-unstyled text-light">
+              <li class="fs-5 fw-bold">Jelajahi AgraHub</li>
+              <li>
+                <a href="HomePage.html" class="text-decoration-none text-light"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#body" class="text-decoration-none text-light"
+                  >Overview</a
+                >
+              </li>
+              <li>
+                <a href="#main" class="text-decoration-none text-light"
+                  >Produk</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-3 p-3">
+            <ul class="list-unstyled text-light">
+              <li class="fs-5 fw-bold">Ikuti Kami</li>
+              <li>
+                <a
+                  href="https://www.instagram.com/ekiiman_j"
+                  target="_blank"
+                  class="text-decoration-none text-light"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-decoration-none text-light"
+                  target="_blank"
+                  >Youtube</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/eki-iman-j/"
+                  target="_blank"
+                  class="text-decoration-none text-light"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-3 p-3">
+            <ul class="list-unstyled text-light">
+              <li class="fs-5 fw-bold">Kunjungi Kami</li>
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/fyRTRTf1EvLQvb3x6"
+                  target="_blank"
+                  class="text-decoration-none text-light"
+                  >CCIT FTUI</a
+                >
+                <i class="bi bi-geo-alt-fill"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr style="color: white" />
+      <div class="container p-1 text-center text-white">
+        <p>&copy; AgraHub 2023</p>
+      </div>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <!-- Bootstrap's JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
